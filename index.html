@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=.5 user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Isaac Luka</title>
+</head>
+<body>    
+        <div class="card">
+            <div class="img">
+                <img src="PhotoEdited.jpg" alt="#" class="profilePicture" data-testid="profilePicture">
+            </div>
+            <div class="vL"></div>
+            <div class="cardText">
+                <div class="nameTitle">
+                    <h1 class="fullName heroText" data-testid="fullName">Isaac Luka</h1>
+                    <h2 class="jobTitle heroText" data-testid="jobTitle">Frontend Web Developer  <i class="fa-brands fa-square-js"></i>  <i class="fa-brands fa-react"></i>  <i class="fa-brands fa-node-js"></i></h2>
+                </div>
+                
+                
+                <p class="shortBio" data-testid="shortBio">I'm a passionate front-end web developer very proficient in JavaScript, React and Node.js. 
+                    I thrive on building dynamic, user-friendly web applications and love taking on exciting development projects. With a keen eye for detail and a drive for innovation, I create seamless digital experiences that bring ideas to life. </p>
+                    <br> 
+                <p class="lastLine">Let's build something amazing together!</p>
+                <br>
+                <h2 class="currentLocation" data-testid="currentLocation"> <i class="fa-solid fa-location-dot"></i> FCT-Abuja, Nigeria.</h2>
+                
+                <h2 class="emailAddress" data-testid="emailAddress"> <i class="fa-solid fa-envelope"></i> <a href="mailto:lukaisaacabdulkarim@gmail.com"> lukaisaacabdulkarim@gmail.com</h2></a>
+
+                <div class="socialTime">
+                    <div class="socialLinks" data-testid="socialLinks">
+                        <a href="http://www.linkedin.com/in/isaacluka"> <i class="fa-brands fa-linkedin"></i> </a>
+                        <a href="http://https://www.instagram.com/lukaisaac99/"> <i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://https://x.com/LukaIsaac99"> <i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/Isaacluka"> <i class="fa-brands fa-github"></i> </a>
+                    </div>
+                    
+                    <div class="currentTimeUTC" data-testid="currentTimeUTC">
+                        <div class="icon"><i class="fa-regular fa-clock"></i></div>
+                        <span class="time" id="time">The Time!</span>
+                    </div>
+
+                </div>
+                
+                
+            </div>            
+        </div>
+        
+        <footer>Copyright &#169; Isaac Luka 2025</footer>
+</body>
+<script>
+    let datetime = document.getElementById("time");
+
+    setInterval(() => {
+        datetime.textContent = new Date().toLocaleTimeString();
+    }, 1000);
+
+    
+
+</script>
+</html>
